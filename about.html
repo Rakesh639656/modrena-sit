@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+<link href="assets/vendor/aos/aos.css" rel="stylesheet">
+<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+<!-- Template Main CSS File -->
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="responsive.css">
+
+</head>
+<body style="min-height: 200vh;">
+    
+  <header>
+    <nav class="navbar navbar-expand-lg bg-primary fixed-top" id="header">
+      <div class="container">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Service</a>
+            </li>
+  
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+  
+            <li class="nav-item">
+              <a class="nav-link" href="#">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown link
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  
+  
+  </header>
+<main id="main">
+<section class="breadcrumbs">
+  <div class="container d-flex justify-content-between align-items-center">
+    <h2>About Us</h2>
+    <ol>
+      <li><a href="index.html">Home</a></li>
+      <li>
+        About Us
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="about_img">
+          <img src="assets/img/about.jpg" alt="" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+        <p class="fst-italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <ul>
+          <li><i class="bi bi-check2-circle"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+          <li><i class="bi bi-check2-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+          <li><i class="bi bi-check2-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+        <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+
+  <script>
+    window.addEventListener('scroll', function(){
+      var header = document.getElementById('header');
+      header.classList.toggle("sticky", window.scrollY > 10);
+    });
+  
+
+    document.getElementById("myInput").addEventListener("click", function() {
+  this.style.borderColor = 'red'; // Input element ki border color red kar di gayi hai.
+});
+
+
+var btns = document.getElementById('btn2');
+
+
+
+window.addEventListener("scroll", () =>{
+    if(window.pageYOffset > 100){
+        btns.style.display="block"
+    }
+    else{
+        btns.style.display="none"
+    }
+});
+
+btns.addEventListener("click", () =>{
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
+});
+
+  </script>
+</body>
+</html>
